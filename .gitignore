@@ -1,0 +1,6 @@
+# Ignore all files and folders inside /figures and /data
+figures/*
+!figures/.gitkeep
+
+data/*
+!data/.gitkeep
