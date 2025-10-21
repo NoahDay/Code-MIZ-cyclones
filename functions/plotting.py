@@ -259,3 +259,9 @@ def testPlot():
     plt.show()
 
 
+# Define formatters for latitude and longitude
+def latitude_formatter(x, pos):
+    return f'{abs(x):.1f}$^\circ$ {"S" if x < 0 else "N"}'
+
+def longitude_formatter(x, pos):
+    return f'{abs(x):.0f}$^\circ$ {"W" if x < 0 else "E"}'
